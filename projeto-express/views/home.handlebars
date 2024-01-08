@@ -1,0 +1,12 @@
+<h1>Página Principal</h1>
+<h2>Postagens recentes</h2>
+<a href="/cadastro"><button>Criar um Post</button></a>
+
+{{#each posts}}
+
+    <h3>{{titulo}}</h3>
+    <p>{{conteudo}}</p>
+    <a href="/deletar/{{id}}"><button>Deletar</button></a>
+    <hr>
+    
+{{/each}}
